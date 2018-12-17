@@ -13,7 +13,7 @@ return $xmlStr;
 
 // Select all the rows in the markers table
 try{
-  $sql = "select * from markers where 1";
+  $sql = "select * from markers where true";
   $result = $pdo->query($sql);
   if($result->rowCount() > 0){
     header("Content-type: text/xml");
