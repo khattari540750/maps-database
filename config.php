@@ -1,9 +1,4 @@
 <?php
-/*
-Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password)
-*/
-
 try{
     $dbinfo = parse_url(getenv('DATABASE_URL'));
 	$dsn = 'pgsql:host=' . $dbinfo['host'] . ';dbname=' . substr($dbinfo['path'], 1);
